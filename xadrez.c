@@ -34,5 +34,22 @@ int main() {
         printf("Esquerda\n", rainha);
     }
     
+    printf("\n");
+
+    // Movimento do Cavalo em L.
+    printf("##### Movimentos do Cavalo #####\n\n");
+
+    // Usando o loop aninhado
+    for (int c = 0; c < 2; c++) { 
+        // Duas casas para baixo
+        printf("Baixo\n");
+        int cavalo = 0;
+
+        // Apenas após as duas casas para baixo, move uma para a esquerda
+        while (cavalo < 1 && c == 1) {
+            cavalo++;
+            printf("Esquerda\n");
+        } 
+    }
     return 0;
 }
